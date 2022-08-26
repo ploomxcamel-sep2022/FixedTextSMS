@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:onClick="cbtn01"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/cardLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <!--android:foreground="?android:attr/selectableItemBackground"で”押された感”を実装できる（システムのデフォルトの演出）-->
+            <!--CardViewの場合はbackgroundではなくforegroundに設定するらしい-->
+            <!--今回はセレクターで実装-->
+            <!--android:foregroundにセレクターにより”押された感”を実装-->
+            <!--backgroundでは機能しなかったのでforegroundに設定-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card01"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:foreground="@drawable/color_select"
+                android:onClick="cView01"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/tView11"
+                        android:layout_toEndOf="@+id/tView11"
+                        android:background="@drawable/stroke_select"
+                        android:padding="4dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="19dp"
+                        android:text="メッセージA：" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card02"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:foreground="@drawable/color_select"
+                android:onClick="cView02"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/tView12"
+                        android:layout_toEndOf="@+id/tView12"
+                        android:background="@drawable/stroke_select"
+                        android:padding="4dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="16dp"
+                        android:text="メッセージB：" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card03"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:foreground="@drawable/color_select"
+                android:onClick="cView03"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/tView13"
+                        android:layout_toEndOf="@+id/tView13"
+                        android:background="@drawable/stroke_select"
+                        android:padding="4dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="17dp"
+                        android:text="メッセージC：" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card04"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:foreground="@drawable/color_select"
+                android:onClick="cView04"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/tView14"
+                        android:layout_toEndOf="@+id/tView14"
+                        android:background="@drawable/stroke_select"
+                        android:padding="4dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:text="メッセージD：" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card05"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:foreground="@drawable/color_select"
+                android:onClick="cView05"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tView45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/tView15"
+                        android:layout_toEndOf="@+id/tView15"
+                        android:background="@drawable/stroke_select"
+                        android:padding="4dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/tView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="20dp"
+                        android:text="メッセージE：" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

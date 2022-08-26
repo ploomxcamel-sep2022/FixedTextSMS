@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/inputtext"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="メッセージを入力し完了をタップ"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_weight="3.21" />
+
+            <Button
+                android:id="@+id/compleatbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="compbt"
+                android:text="決定" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS(Cメール)で送信出来る文字数に関して\n\n■4G LTE スマートフォンの場合\n最大全角670文字 (半角1,530文字) まで\n※他社携帯電話宛てには、 71文字 (半角のみ161文字) 以上送信出来ません。" />
+    </LinearLayout>
+
+</LinearLayout>
